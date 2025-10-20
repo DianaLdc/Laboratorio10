@@ -1,0 +1,149 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f6fa;
+  color: #333;
+}
+
+header {
+  background-color: #0a3d62;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.activo,
+nav a:hover {
+  border-bottom: 2px solid #82ccdd;
+}
+
+main {
+  padding: 30px;
+  text-align: center;
+}
+
+.tarjetas {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.tarjeta {
+  width: 320px;
+  min-height: 220px;
+  border-radius: 10px;
+  padding: 22px;
+  box-sizing: border-box;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(10, 10, 10, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta-primaria {
+  background: linear-gradient(180deg, #123a66 0%, #0d2b4f 100%);
+}
+
+.tarjeta-secundaria {
+  background: linear-gradient(180deg, #185a7a 0%, #0f3f56 100%);
+}
+
+.tarjeta-terciaria {
+  background: linear-gradient(180deg, #2b4b6d 0%, #16324a 100%);
+}
+
+.tarjeta h2 {
+  margin: 0 0 12px 0;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.tarjeta p {
+  margin: 0 0 18px 0;
+  font-size: 0.95rem;
+  opacity: 0.95;
+}
+
+.boton {
+  display: inline-block;
+  background: #82ccdd;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tarjeta .boton {
+  background: #ffffff;
+  color: #0a3d62;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  align-self: flex-start;
+  font-weight: 600;
+}
+
+footer {
+  background-color: #0a3d62;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 900px) {
+  nav ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .tarjetas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta {
+    width: 90%;
+    min-height: 180px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+}
